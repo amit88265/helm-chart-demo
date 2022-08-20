@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  pullPolicy: IfNotPresent
+  repository: helm-chart-demo-docker-img
+  tag: latest
+
+service:
+  type: NodePort
+  port: 9899
+
